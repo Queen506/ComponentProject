@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add to Shopping Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <center>
+        <h1>Add to Shopping Cart</h1>
+        <form name="AddToShoppingCart" action="AddShoppingCartController" method="POST">
+            <table border="1">
+                <tr>
+                    <th>DVD name</th>
+                    <th>Rating</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                  
+                    <td> <input type="checkbox" name="select[]" value="1"> Harry Potter</td>
+                    <td>PG</td>
+                    <td>2011</td>
+                    <td>450</td>
+                    <td><input type="text" name="qty[]" value=""></td>
+                </tr>
+                <tr>
+                    
+                    <td><input type="checkbox" name="select[]" value="2"> Seven</td>
+                    <td>PG-13</td>
+                    <td>2004</td>
+                    <td>240</td>
+                    <td><input type="text" name="qty[]" value=""></td>
+                </tr>
+                <tr>
+                    
+                    <td><input type="checkbox" name="select[]" value="3">Shrek 2</td>
+                    <td>PG</td>
+                    <td>2004</td>
+                    <td>200</td>
+                    <td><input type="text" name="qty[]" value=""></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Add to Cart">
+        </form>
+        <br>
+        <a href="index.html">Back to Menu</a>
+    </center>
+</body>
+</html>
